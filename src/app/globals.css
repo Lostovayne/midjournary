@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.fondo_Mid {
+  background: #000;
+  background-image: url("/Fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.button {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      180deg,
+      rgba(254, 200, 241, 0.9) -22.92%,
+      rgba(237, 146, 215, 0) 26.73%
+    ),
+    radial-gradient(
+        116.32% 95.63% at 76.68% 66.67%,
+        rgba(96, 46, 166, 0) 0%,
+        rgba(201, 119, 214, 0.5) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay, normal;
+  /* Sign Up button
+
+Sign up button
+*/
+  box-shadow: inset 0px -1px 8px #9375b6, inset 0px 0px 5px #fface4;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+}
+
+li:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(254, 200, 241, 0.9) -22.92%,
+      rgba(237, 146, 215, 0) 26.73%
+    ),
+    radial-gradient(
+        116.32% 95.63% at 76.68% 66.67%,
+        rgba(96, 46, 166, 0) 0%,
+        rgba(201, 119, 214, 0.5) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay, normal;
+  /* Sign Up button
+
+Sign up button
+*/
+  box-shadow: inset 0px -1px 8px #9375b6, inset 0px 0px 5px #fface4;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
 }
